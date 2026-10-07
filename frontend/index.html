@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiBot — Digital Marketing AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">✦</div>
+
+            <div>
+                <h2>DigiBot</h2>
+                <span>Marketing AI</span>
+            </div>
+        </div>
+
+
+        <button class="new-chat">
+            <span>＋</span>
+            New Chat
+        </button>
+
+
+        <div class="sidebar-section">
+
+            <p class="section-title">MARKETING TOPICS</p>
+
+            <button class="topic-btn" onclick="sendQuickMessage('How can SEO help my business?')">
+                <span>⌕</span>
+                SEO
+            </button>
+
+            <button class="topic-btn" onclick="sendQuickMessage('What is Google Ads and how does it work?')">
+                <span>◈</span>
+                Google Ads
+            </button>
+
+            <button class="topic-btn" onclick="sendQuickMessage('How can social media marketing grow my business?')">
+                <span>◎</span>
+                Social Media
+            </button>
+
+            <button class="topic-btn" onclick="sendQuickMessage('What is content marketing?')">
+                <span>✎</span>
+                Content Marketing
+            </button>
+
+            <button class="topic-btn" onclick="sendQuickMessage('How can I generate more leads online?')">
+                <span>◇</span>
+                Lead Generation
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-section recent">
+
+            <p class="section-title">RECENT</p>
+
+            <div class="recent-chat">
+                SEO strategy for startups
+            </div>
+
+            <div class="recent-chat">
+                Google Ads basics
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="online-status">
+                <span></span>
+                AI Assistant Online
+            </div>
+
+            <p>Digital Marketing Assistant</p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Top Navigation -->
+        <nav class="topbar">
+
+            <div class="mobile-brand">
+                ✦ DigiBot
+            </div>
+
+            <div class="top-links">
+                <span>AI Marketing Assistant</span>
+                <div class="status">
+                    <span></span>
+                    Online
+                </div>
+            </div>
+
+        </nav>
+
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span>✦</span>
+                AI-POWERED DIGITAL MARKETING
+            </div>
+
+            <h1>
+                Grow your business<br>
+                <span>with smarter marketing.</span>
+            </h1>
+
+            <p>
+                Ask DigiBot anything about SEO, advertising,
+                social media, content strategy and digital growth.
+            </p>
+
+        </section>
+
+
+        <!-- Marketing Cards -->
+        <section class="marketing-cards">
+
+            <button
+                class="marketing-card"
+                onclick="sendQuickMessage('How can SEO help my business?')"
+            >
+                <div class="card-icon purple">⌕</div>
+
+                <div>
+                    <h3>SEO</h3>
+                    <p>Improve your search visibility</p>
+                </div>
+
+                <span class="arrow">↗</span>
+            </button>
+
+
+            <button
+                class="marketing-card"
+                onclick="sendQuickMessage('How does Google Ads work?')"
+            >
+                <div class="card-icon blue">◈</div>
+
+                <div>
+                    <h3>Google Ads</h3>
+                    <p>Reach customers faster</p>
+                </div>
+
+                <span class="arrow">↗</span>
+            </button>
+
+
+            <button
+                class="marketing-card"
+                onclick="sendQuickMessage('How can social media marketing help my business?')"
+            >
+                <div class="card-icon pink">◎</div>
+
+                <div>
+                    <h3>Social Media</h3>
+                    <p>Build your online presence</p>
+                </div>
+
+                <span class="arrow">↗</span>
+            </button>
+
+
+            <button
+                class="marketing-card"
+                onclick="sendQuickMessage('Give me a content marketing strategy.')"
+            >
+                <div class="card-icon orange">✎</div>
+
+                <div>
+                    <h3>Content</h3>
+                    <p>Create content that converts</p>
+                </div>
+
+                <span class="arrow">↗</span>
+            </button>
+
+        </section>
+
+
+        <!-- Chat -->
+        <section class="chat-wrapper">
+
+            <div id="chat-box" class="chat-box">
+
+                <div class="welcome-message">
+
+                    <div class="ai-avatar">✦</div>
+
+                    <div>
+                        <span class="message-label">DIGIBOT</span>
+
+                        <p>
+                            Hey! 👋 I'm your digital marketing AI assistant.
+                            What would you like to know?
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Input -->
+            <div class="input-wrapper">
+
+                <div class="input-container">
+
+                    <button class="attach-btn">
+                        ＋
+                    </button>
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Ask about SEO, Google Ads, social media..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="send-button"
+                        class="send-btn"
+                    >
+                        ↑
+                    </button>
+
+                </div>
+
+                <p class="input-note">
+                    DigiBot can make mistakes. Verify important marketing decisions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
